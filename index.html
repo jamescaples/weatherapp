@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <title>Weather App</title>
+</head>
+
+<div class="jumbotron" style="background-color: rgb(54, 56, 61) ; color: white;">
+        <h1 class="text-center"><strong><i class="fa fa-weather-o"></i> Weather Dashboard</strong></h1>
+      </div>
+<body>
+ 
+  <div class="container col-md-4 text-left">
+    <p>Search for a City:</p>
+    <form class="example">
+      <input id="city-input" type="text" placeholder="Search.." name="search2">
+      <button id= "add-cities" type="submit"><i class="fa fa-search"></i></button>
+      <div id="buttons-view"></div>
+    </form>
+  </div>
+
+    <!-- weather data section -->
+    <div class="weatherInfo col-md-8">
+        <div class="text-left">
+        <div id="cityAndDate" style="font-size:30px">City and Date</div>
+<div id="temp">Temperture:</div>
+<div id="humidity">Humidity:</div>
+<div id="windSpeed">Wind Speed:</div>
+<div class="row fiveDay col-md-8">5 Day Forecast:</div>
+    <!-- <div class="col-md-8"> -->
+
+
+
+
+</div>
+</div>
+<script src="javaScript.js"></script>
+</body>
+</html>
