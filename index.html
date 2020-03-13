@@ -1,47 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  ​<style>
+    .forecastList {
+      background-color: blue;
+      color: white;
+      width: 100px;
+      border: none;
+      /* padding: 50px; */
+      /* margin: 20px; */
+    }
+  </style>
 
-    <title>Weather App</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  ​
 
-<div class="jumbotron" style="background-color: rgb(54, 56, 61) ; color: white;">
-        <h1 class="text-center"><strong><i class="fa fa-weather-o"></i> Weather Dashboard</strong></h1>
-      </div>
-<body>
- 
-  <div class="container col-md-4 text-left">
-    <p>Search for a City:</p>
-    <form class="example">
-      <input id="city-input" type="text" placeholder="Search.." name="search2">
-      <button id= "add-cities" type="submit"><i class="fa fa-search"></i></button>
-      <div id="buttons-view"></div>
-    </form>
-  </div>
+  <body>
+    ​
+    <h1>Weather Dashboard</h1>
+    <div>
+      <form>
+        <h2>Search for a City:</h2>
+        <input id="searchbar" type="text" />
+        <!-- <button id="searchbutton">Search</button> -->
+        <button id="searchbutton" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+        <ul class="list"></ul>
+      </form>
+    </div>
+    <div id="citiesDiv"></div>
 
-    <!-- weather data section -->
-    <div class="weatherInfo col-md-8">
-        <div class="text-left">
-        <div id="cityAndDate" style="font-size:30px">City and Date</div>
-<div id="temp">Temperture:</div>
-<div id="humidity">Humidity:</div>
-<div id="windSpeed">Wind Speed:</div>
-<div class="row fiveDay col-md-8">5 Day Forecast:</div>
-    <!-- <div class="col-md-8"> -->
+    <div class="jumbotron">
+      <form id="currentWeather" style = "display:none">
+        <h2 id="cityName"></h2>
+        <div id="temperature"></div>
+        <br />
+        <div id="humidity"></div>
+        <br />
+        <div id="windSpeed"></div>
+      </form>
+      <h2 id = "fiveDay" style = "display:none">5-Day Forecast</h2>
+      <form id="forecastList" style="display:none">
+        <!-- <h2 id="cityName1"></h2> -->
+        <div id="date1"></div>
+        <br />
+        <div class="icon1"></div>
+        <div id="temperature1"></div>
+        <br />
+        <div id="humidity1"></div>
+        <br />
+      </form>
+      <form id="forecastList1" style="display:none">
+        <!-- <h2 id="cityName2"></h2> -->
+        <div id="date2"></div>
+        <br />
+        <div class="icon2"></div>
+        <div id="temperature2"></div>
+        <br />
+        <div id="humidity2"></div>
+        <br />
+      </form>
+      <form id="forecastList2" style="display:none">
+        <!-- <h2 id="cityName3"></h2> -->
+        <div id="date3"></div>
+        <br />
+        <div class="icon3"></div>
+        <div id="temperature3"></div>
+        <br />
+        <div id="humidity3"></div>
+        <br />
+      </form>
+      <form id="forecastList3" style="display:none">
+        <!-- <h2 id="cityName4"></h2> -->
+        <div id="date4"></div>
+        <br />
+        <div class="icon4"></div>
+        <div id="temperature4"></div>
+        <br />
+        <div id="humidity4"></div>
+        <br />
+      </form>
+      <form id="forecastList4" style="display:none">
+        <!-- <h2 id="cityName5"></h2> -->
+        <div id="date5"></div>
+        <br />
+        <div class="icon5"></div>
+        <div id="temperature5"></div>
+        <br />
+        <div id="humidity5"></div>
+        <br />
+      </form>
+    </div>
 
-
-
-
-</div>
-</div>
-<script src="javaScript.js"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./scriptNew.js"></script>
+  </body>
 </html>

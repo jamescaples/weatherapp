@@ -1,68 +1,109 @@
+#forecastList {
+  background-color: blue;
+  color: white;
+  width: 120px;
+  margin-top: -80px;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+}
+
+#forecastList1 {
+  background-color: blue;
+  color: white;
+  width: 120px;
+  border-radius: 10px;
+  margin-top: -80px;
+  margin-left: 200px;
+  position: absolute;
+  text-align: center;
+}
+
+#forecastList2 {
+  background-color: blue;
+  color: white;
+  width: 120px;
+  border-radius: 10px;
+  margin-top: -80px;
+  margin-left: 400px;
+  position: absolute;
+  text-align: center;
+}
+
+#forecastList3 {
+  background-color: blue;
+  color: white;
+  width: 120px;
+  border-radius: 10px;
+  margin-top: -80px;
+  margin-left: 600px;
+  position: absolute;
+  text-align: center;
+}
+
+#forecastList4 {
+  background-color: blue;
+  color: white;
+  width: 120px;
+  border-radius: 10px;
+  margin-top: -80px;
+  margin-left: 800px;
+  position: absolute;
+  text-align: center;
+}
+
+.jumbotron {
+  align-items: center;
+  margin-top: 300px;
+  margin-left: 500px;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  height: 60px;
+  margin-top: -30px;
+  widows: 100%;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+#currentWeather {
+  margin-top: -25%;
+  width: 60%;
+  position: absolute;
+  font-size: 20px;
+  border-style: outset;
+}
 
 body {
-  font-family: Arial;
-  font-size: 25px;
+  font: 16px Arial, sans-serif;
 }
 
-
-
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-}
-
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
+button {
   background: #2196F3;
   color: white;
-  font-size: 17px;
+  font-size: 15px;
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
 }
 
-form.example button:hover {
-  background: #0b7dda;
+#searchbar {
+  background: #f1f1f1;
 }
 
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
+.searchCity {
+  background-color: grey;
+  border: 1px solid green;
+  color: white;
+  cursor: pointer;
+  width: 20%;
+  display: block;
 }
-.container {
-    float: left;
-    background-color: rgb(236, 235, 235);
-}
-p {
-    size: xx-large;
-    
-}
-.weatherInfo{
-border-color: black;
-font-size: 16px;
-line-height: 3.25;
-width: 60%;
-height: 325px;  
-padding: 15px;
-border: 1px solid black;
-margin: 10px;
-}
-.cityAndDate{
-    font-size: 30px;
-    font: Bolder;
-}
-.fiveDay{
-    font-size: 30px;
-    font: Bolder;
-    padding: 0px;
-}
-#large{
-  font-size: 30px;
+#fiveDay
+{
+  margin-top: -140px;
+  position: absolute;
 }
